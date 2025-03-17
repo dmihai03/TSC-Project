@@ -1,3 +1,1 @@
-# TSC-Project
-
-## **TODO** choose idea 
+# README
