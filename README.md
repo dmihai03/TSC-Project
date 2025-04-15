@@ -42,6 +42,11 @@ Display system:
 Memory:
   - microSD card interface connected via SPI for heavy data
 
+Buttons:
+  - BOOT -> the microcontroller enters in bootloader
+  - RESET -> general reset
+  - I/O CHANGE -> user I/O interactions
+
 ### ESP32-C6 pins configuration
 | Component | PIN |
 |----|----|
