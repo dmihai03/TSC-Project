@@ -974,6 +974,32 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="8" x="0.985" y="0.75" dx="0.76" dy="0.27" layer="1" roundness="25"/>
 <smd name="9" x="0" y="0" dx="0.9" dy="1.3" layer="1" cream="no"/>
 </package>
+<package name="SOT95P280X145-6N" library_version="9">
+<description>&lt;b&gt;SOT23-6(ESDA6V1-5SC6Y)&lt;/b&gt;&lt;br&gt;
+</description>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="-0.812" y1="1.462" x2="0.812" y2="1.462" width="0.1" layer="51"/>
+<wire x1="0.812" y1="1.462" x2="0.812" y2="-1.462" width="0.1" layer="51"/>
+<wire x1="0.812" y1="-1.462" x2="-0.812" y2="-1.462" width="0.1" layer="51"/>
+<wire x1="-0.812" y1="-1.462" x2="-0.812" y2="1.462" width="0.1" layer="51"/>
+<wire x1="-0.812" y1="0.512" x2="0.138" y2="1.462" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="1.462" x2="0.3" y2="1.462" width="0.2" layer="21"/>
+<wire x1="0.3" y1="1.462" x2="0.3" y2="-1.462" width="0.2" layer="21"/>
+<wire x1="0.3" y1="-1.462" x2="-0.3" y2="-1.462" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-1.462" x2="-0.3" y2="1.462" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.6" x2="-0.65" y2="1.6" width="0.2" layer="21"/>
+<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="6" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="JST04_1MM_RA" urn="urn:adsk.eagle:package:41390393/1" type="box">
@@ -1490,6 +1516,20 @@ Switches electrical signals</description>
 <pin name="EP" x="17.78" y="5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="!ALERT" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
 <pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="USBLC6-2SC6Y" library_version="9">
+<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-7.62" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="I/O1_1" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="I/O2_1" x="0" y="-5.08" length="middle"/>
+<pin name="I/O1_2" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="VBUS" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="I/O2_2" x="33.02" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2308,6 +2348,37 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </device>
 </devices>
 </deviceset>
+<deviceset name="USBLC6-2SC6Y" prefix="D" library_version="64">
+<description>&lt;b&gt;Low Cap. ESD Protection Auto SOT-23-6 STMicroelectronics USBLC6-2SC6Y, Dual Uni-Directional TVS Diode Array, 6-Pin SOT-23&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.pdf"&gt; Datasheet &lt;/a&gt;  &lt;a href="https://pricing.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="USBLC6-2SC6Y" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-6N">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="I/O1_1" pad="1"/>
+<connect gate="G$1" pin="I/O1_2" pad="6"/>
+<connect gate="G$1" pin="I/O2_1" pad="3"/>
+<connect gate="G$1" pin="I/O2_2" pad="4"/>
+<connect gate="G$1" pin="VBUS" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" 17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6 "/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MP" value="USBLC6-2SC6Y"/>
+<attribute name="PACKAGE" value="SOT-23-6 STMicroelectronics"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="DeskAssistant v19 v1" urn="urn:adsk.eagle:library:47587466">
@@ -2372,32 +2443,6 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-2.5" y="2.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="SOT95P280X145-6N" urn="urn:adsk.eagle:footprint:47587509/1" library_version="9">
-<description>&lt;b&gt;SOT23-6(ESDA6V1-5SC6Y)&lt;/b&gt;&lt;br&gt;
-</description>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
-<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
-<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
-<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
-<wire x1="-0.812" y1="1.462" x2="0.812" y2="1.462" width="0.1" layer="51"/>
-<wire x1="0.812" y1="1.462" x2="0.812" y2="-1.462" width="0.1" layer="51"/>
-<wire x1="0.812" y1="-1.462" x2="-0.812" y2="-1.462" width="0.1" layer="51"/>
-<wire x1="-0.812" y1="-1.462" x2="-0.812" y2="1.462" width="0.1" layer="51"/>
-<wire x1="-0.812" y1="0.512" x2="0.138" y2="1.462" width="0.1" layer="51"/>
-<wire x1="-0.3" y1="1.462" x2="0.3" y2="1.462" width="0.2" layer="21"/>
-<wire x1="0.3" y1="1.462" x2="0.3" y2="-1.462" width="0.2" layer="21"/>
-<wire x1="0.3" y1="-1.462" x2="-0.3" y2="-1.462" width="0.2" layer="21"/>
-<wire x1="-0.3" y1="-1.462" x2="-0.3" y2="1.462" width="0.2" layer="21"/>
-<wire x1="-1.85" y1="1.6" x2="-0.65" y2="1.6" width="0.2" layer="21"/>
-<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
-<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
-<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
-<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
-<smd name="5" x="1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
-<smd name="6" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
-</package>
 <package name="SJ" urn="urn:adsk.eagle:footprint:47587523/1" library_version="1">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
@@ -2431,12 +2476,6 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 Source: www.farnell.com/datasheets/49238.pdf</description>
 <packageinstances>
 <packageinstance name="ESP32C6_VARISTOR_CT/CN1812"/>
-</packageinstances>
-</package3d>
-<package3d name="ESP32C6_USBLC6-2SC6Y" urn="urn:adsk.eagle:package:47587541/1" type="box">
-<description>&lt;b&gt;SOT23-6(ESDA6V1-5SC6Y)&lt;/b&gt;&lt;br&gt;</description>
-<packageinstances>
-<packageinstance name="SOT95P280X145-6N"/>
 </packageinstances>
 </package3d>
 <package3d name="SJ" urn="urn:adsk.eagle:package:47587526/1" type="box">
@@ -2492,20 +2531,6 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="USBLC6-2SC6Y" urn="urn:adsk.eagle:symbol:47587482/1" library_version="9">
-<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-7.62" x2="27.94" y2="2.54" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="I/O1_1" x="0" y="0" length="middle"/>
-<pin name="GND" x="0" y="-2.54" length="middle"/>
-<pin name="I/O2_1" x="0" y="-5.08" length="middle"/>
-<pin name="I/O1_2" x="33.02" y="0" length="middle" rot="R180"/>
-<pin name="VBUS" x="33.02" y="-2.54" length="middle" rot="R180"/>
-<pin name="I/O2_2" x="33.02" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SJ" urn="urn:adsk.eagle:symbol:47587495/1" library_version="1">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
@@ -2602,40 +2627,6 @@ Source: &lt;a href="https://gct.co/files/drawings/usb4110.pdf"&gt; Datasheet &lt
 </device>
 </devices>
 </deviceset>
-<deviceset name="USBLC6-2SC6Y" urn="urn:adsk.eagle:component:47587570/1" prefix="D" library_version="64">
-<description>&lt;b&gt;Low Cap. ESD Protection Auto SOT-23-6 STMicroelectronics USBLC6-2SC6Y, Dual Uni-Directional TVS Diode Array, 6-Pin SOT-23&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.pdf"&gt; Datasheet &lt;/a&gt;  &lt;a href="https://pricing.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="USBLC6-2SC6Y" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P280X145-6N">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="I/O1_1" pad="1"/>
-<connect gate="G$1" pin="I/O1_2" pad="6"/>
-<connect gate="G$1" pin="I/O2_1" pad="3"/>
-<connect gate="G$1" pin="I/O2_2" pad="4"/>
-<connect gate="G$1" pin="VBUS" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:47587541/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value=" 17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6 "/>
-<attribute name="MF" value="STMicroelectronics"/>
-<attribute name="MP" value="USBLC6-2SC6Y"/>
-<attribute name="PACKAGE" value="SOT-23-6 STMicroelectronics"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SJ" urn="urn:adsk.eagle:component:47587584/1" prefix="SJ" uservalue="yes" library_version="1">
 <description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
 <gates>
@@ -2680,7 +2671,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="GND2" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="GND" device=""/>
 <part name="GND4" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="GND" device=""/>
 <part name="GND5" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="GND" device=""/>
-<part uuid="2882400009" name="D1" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="USBLC6-2SC6Y" device="" package3d_urn="urn:adsk.eagle:package:47587541/1"/>
 <part name="GND6" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="GND" device=""/>
 <part name="GND7" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="GND" device=""/>
 <part uuid="2882400003" name="SJ1" library="DeskAssistant v19 v1" library_urn="urn:adsk.eagle:library:47587466" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:47587526/1"/>
@@ -2840,6 +2830,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="R2-USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.rfPcC3d2T3mKPkGz0BLbYg" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="5k1"/>
 <part name="C4_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.rfPcC3d2T3mKPkGz0BLbYg" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
 <part name="C5_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.rfPcC3d2T3mKPkGz0BLbYg" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="D1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.rfPcC3d2T3mKPkGz0BLbYg" deviceset="USBLC6-2SC6Y" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2928,10 +2919,6 @@ Stemma QT</text>
 </instance>
 <instance part="GND5" gate="1" x="121.92" y="170.18" smashed="yes" rot="R90">
 <attribute name="VALUE" x="124.46" y="167.64" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="D1" gate="G$1" x="109.22" y="187.96" smashed="yes">
-<attribute name="NAME" x="115.57" y="195.58" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="115.57" y="193.04" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND6" gate="1" x="149.86" y="185.42" smashed="yes" rot="R90">
 <attribute name="VALUE" x="152.4" y="182.88" size="1.27" layer="96" rot="R90"/>
@@ -3498,9 +3485,9 @@ Stemma QT</text>
 <attribute name="NAME" x="118.364" y="-27.559" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.364" y="-32.639" size="1.778" layer="96"/>
 </instance>
-<instance part="C10_SUPERCAP" gate="G$1" x="127" y="-30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="135.89" y="-35.56" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="132.08" y="-30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="C10_SUPERCAP" gate="G$1" x="127" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="130.81" y="-20.32" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="134.62" y="-27.94" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND42" gate="1" x="66.04" y="-33.02" smashed="yes">
 <attribute name="VALUE" x="63.5" y="-35.56" size="1.778" layer="96"/>
@@ -3542,6 +3529,10 @@ Stemma QT</text>
 <attribute name="NAME" x="151.384" y="160.401" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.384" y="155.321" size="1.778" layer="96"/>
 </instance>
+<instance part="D1" gate="G$1" x="142.24" y="182.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.57" y="195.58" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="130.81" y="193.04" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3580,9 +3571,9 @@ Stemma QT</text>
 <label x="27.94" y="180.34" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
 <label x="106.68" y="185.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="VBUS"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="162.56" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
@@ -3596,13 +3587,17 @@ Stemma QT</text>
 <pinref part="C5_USB" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="177.8" y1="175.26" x2="170.18" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="175.26" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="175.26" x2="170.18" y2="185.42" width="0.1524" layer="91"/>
-<junction x="170.18" y="175.26"/>
-<label x="170.18" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="170.18" y1="165.1" x2="170.18" y2="185.42" width="0.1524" layer="91"/>
+<label x="170.18" y="187.96" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="R1_PWRUSB" gate="G$1" pin="2"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="187.96" y1="185.42" x2="177.8" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="185.42" x2="177.8" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="185.42" x2="177.8" y2="175.26" width="0.1524" layer="91"/>
+<junction x="170.18" y="185.42"/>
 <pinref part="D2" gate="G$0" pin="ANODE"/>
+<wire x1="170.18" y1="185.42" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
+<junction x="177.8" y="185.42"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="116.84" x2="195.58" y2="127" width="0.1524" layer="91"/>
@@ -3668,9 +3663,9 @@ Stemma QT</text>
 <junction x="96.52" y="149.86"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="VBUS"/>
 <wire x1="142.24" y1="185.42" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="D1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="154.94" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
@@ -3916,6 +3911,9 @@ Stemma QT</text>
 <junction x="284.48" y="25.4"/>
 <pinref part="RESET_BUTTON" gate="G$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="27.94" x2="284.48" y2="27.94" width="0.1524" layer="91"/>
+<junction x="284.48" y="27.94"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
@@ -3925,6 +3923,9 @@ Stemma QT</text>
 <wire x1="309.88" y1="25.4" x2="309.88" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="BOOT_BUTTON" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="27.94" x2="304.8" y2="27.94" width="0.1524" layer="91"/>
+<junction x="304.8" y="27.94"/>
 </segment>
 <segment>
 <wire x1="325.12" y1="27.94" x2="325.12" y2="25.4" width="0.1524" layer="91"/>
@@ -3934,6 +3935,9 @@ Stemma QT</text>
 <wire x1="327.66" y1="25.4" x2="327.66" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="CHANGE_BUTTON" gate="G$1" pin="2"/>
 <pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="27.94" x2="325.12" y2="27.94" width="0.1524" layer="91"/>
+<junction x="325.12" y="27.94"/>
 </segment>
 <segment>
 <wire x1="185.42" y1="-2.54" x2="185.42" y2="0" width="0.1524" layer="91"/>
@@ -3993,12 +3997,12 @@ Stemma QT</text>
 <segment>
 <wire x1="116.84" y1="-33.02" x2="116.84" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-35.56" x2="127" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="127" y1="-35.56" x2="127" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="C10_SUPERCAP" gate="G$1" pin="2"/>
 <wire x1="127" y1="-35.56" x2="127" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="127" y="-35.56"/>
 <pinref part="GND43" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C10_SUPERCAP" gate="G$1" pin="1"/>
+<wire x1="127" y1="-33.02" x2="127" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="127" y="-35.56"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -4025,9 +4029,9 @@ Stemma QT</text>
 <label x="99.06" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="I/O2_1"/>
 <wire x1="109.22" y1="182.88" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
 <label x="106.68" y="182.88" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="I/O1_2"/>
 </segment>
 </net>
 <net name="DN" class="0">
@@ -4042,9 +4046,9 @@ Stemma QT</text>
 <label x="99.06" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="I/O1_1"/>
 <wire x1="109.22" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
 <label x="106.68" y="187.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="I/O2_2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4056,10 +4060,10 @@ Stemma QT</text>
 </net>
 <net name="USB_D-" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="I/O1_2"/>
 <wire x1="142.24" y1="187.96" x2="142.24" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="190.5" x2="144.78" y2="190.5" width="0.1524" layer="91"/>
 <label x="144.78" y="190.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="I/O2_1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IO12"/>
@@ -4069,10 +4073,10 @@ Stemma QT</text>
 </net>
 <net name="USB_D+" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="I/O2_2"/>
 <wire x1="142.24" y1="182.88" x2="142.24" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="180.34" x2="144.78" y2="180.34" width="0.1524" layer="91"/>
 <label x="144.78" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="D1" gate="G$1" pin="I/O1_1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IO13"/>
@@ -4486,6 +4490,8 @@ Stemma QT</text>
 <pinref part="CHANGE_BUTTON" gate="G$1" pin="4"/>
 <pinref part="R_CHANGE" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="3"/>
+<wire x1="322.58" y1="38.1" x2="325.12" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -4692,6 +4698,8 @@ Stemma QT</text>
 <pinref part="RESET_BUTTON" gate="G$1" pin="4"/>
 <pinref part="R_RESET" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="3"/>
+<wire x1="281.94" y1="38.1" x2="284.48" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT_RTC" class="0">
@@ -4992,6 +5000,8 @@ Stemma QT</text>
 <pinref part="BOOT_BUTTON" gate="G$1" pin="4"/>
 <pinref part="R_BOOT" gate="G$1" pin="1"/>
 <pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="3"/>
+<wire x1="302.26" y1="38.1" x2="304.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IO9"/>
@@ -5008,9 +5018,6 @@ Stemma QT</text>
 <segment>
 <wire x1="121.92" y1="-10.16" x2="127" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="127" y1="-10.16" x2="127" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="C10_SUPERCAP" gate="G$1" pin="1"/>
-<wire x1="127" y1="-20.32" x2="127" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="127" y="-20.32"/>
 <wire x1="127" y1="-20.32" x2="116.84" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-20.32" x2="116.84" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-20.32" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
@@ -5018,6 +5025,9 @@ Stemma QT</text>
 <label x="114.3" y="-20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R_CAPACITOR" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="127" y1="-20.32" x2="127" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="127" y="-20.32"/>
+<pinref part="C10_SUPERCAP" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
